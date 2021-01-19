@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSPGravFieldV2", "KSPGravFieldV2.csproj", "{B1DFEF39-BED5-47D9-BFE5-43828E1E696F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1DFEF39-BED5-47D9-BFE5-43828E1E696F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DFEF39-BED5-47D9-BFE5-43828E1E696F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DFEF39-BED5-47D9-BFE5-43828E1E696F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DFEF39-BED5-47D9-BFE5-43828E1E696F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03773C54-58DD-4670-8625-F9B4D356186A}
+	EndGlobalSection
+EndGlobal
