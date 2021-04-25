@@ -17,3 +17,13 @@ C:\Users\David\Desktop\Adam\Uni work\Personal Projects\kspGravFieldV2\obj\Debug\
 C:\Users\David\Desktop\Adam\Uni work\Personal Projects\kspGravFieldV2\obj\Debug\KSPGravFieldV2.csproj.CoreCompileInputs.cache
 C:\Users\David\Desktop\Adam\Uni work\Personal Projects\kspGravFieldV2\obj\Debug\KSPGravFieldV2.exe
 C:\Users\David\Desktop\Adam\Uni work\Personal Projects\kspGravFieldV2\obj\Debug\KSPGravFieldV2.pdb
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\bin\Debug\KSPGravFieldV2.exe.config
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\bin\Debug\KSPGravFieldV2.exe
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\bin\Debug\KSPGravFieldV2.pdb
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\obj\Debug\KSPGravFieldV2.csprojAssemblyReference.cache
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\obj\Debug\KSPGravFieldV2.Form1.resources
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\obj\Debug\KSPGravFieldV2.Properties.Resources.resources
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\obj\Debug\KSPGravFieldV2.csproj.GenerateResource.cache
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\obj\Debug\KSPGravFieldV2.csproj.CoreCompileInputs.cache
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\obj\Debug\KSPGravFieldV2.exe
+C:\Users\adamh\OneDrive\Desktop\Adam\Uni work\Year 2\Personal Projects\KSP-Grav-Fields-Calc\obj\Debug\KSPGravFieldV2.pdb

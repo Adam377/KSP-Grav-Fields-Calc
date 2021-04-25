@@ -32,7 +32,7 @@ namespace KSPGravFieldV2
         {
             Body tempBody = new Body();
 
-            tempBody = getBodyFromAVLTree(tempBody, 0);
+            tempBody = getBodyFromAVLTree(tempBody);
 
             if(tempBody != null)
             {
@@ -63,8 +63,9 @@ namespace KSPGravFieldV2
                         b.Name = bodyData[0];
                         b.Mass = double.Parse(bodyData[1]);
                         b.Radius = double.Parse(bodyData[2]);
+                        b.SolarDay = double.Parse(bodyData[3]);
 
-                        //Fill combo box with planet names
+                        //Fill combo box with moon and planet names
                         bodyComboBox.Items.Add(b.Name);
 
                         bodies.InsertItem(b);
@@ -89,7 +90,7 @@ namespace KSPGravFieldV2
         {
             Body temp = new Body();
 
-            temp = getBodyFromAVLTree(temp, 1);
+            temp = getBodyFromAVLTree(temp);
 
             if(temp != null)
             {
@@ -104,7 +105,7 @@ namespace KSPGravFieldV2
             }
         }
 
-        private Body getBodyFromAVLTree(Body b, int operation)
+        private Body getBodyFromAVLTree(Body b)
         {
             //search AVL Tree for Body object with same name
             try
@@ -112,21 +113,39 @@ namespace KSPGravFieldV2
                 //If the user has chosen an option from the combo box
                 b.Name = bodyComboBox.SelectedItem.ToString();
                 b = bodies.GetBodyFromTree(b);
-                if((b.Name.CompareTo("Jool") == 0) || (b.Name.CompareTo("Sun") == 0))
-                {
-                    gravFieldAnswerTextBox.Text = "The Sun and Jool have no solid surfaces";
-                    return null;
-                }
-                else
-                {
-                    gravFieldAnswerTextBox.Text = "Could not find body in AVL tree";
-                    return b;
-                }
+                return b;
             }
             catch(NullReferenceException nre)
             {
                 gravFieldAnswerTextBox.Text = "Null Reference Exception";
                 return null;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Calculates geostationary height above service of planet
+            // Geostationary height above moon would be outside of it's
+            // gravitational field
+
+            Body temp = new Body();
+
+            // Getting data about the planet from the binary search tree
+            // to calculate geostationary orbit height
+            temp = getBodyFromAVLTree(temp);
+
+            if(temp != null)
+            {
+                // If body has been found, we can calculate geostationary height
+
+                if(temp.calcGeoHeight() != 0)
+                {
+                    gravFieldAnswerTextBox.Text = Math.Round(temp.calcGeoHeight(),0).ToString() + "m";
+                }
+                else
+                {
+                    gravFieldAnswerTextBox.Text = "Cannot calculate height above moon";
+                }
             }
         }
     }

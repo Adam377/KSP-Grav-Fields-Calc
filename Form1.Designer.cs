@@ -35,6 +35,7 @@
             this.gravFieldAnswerTextBox = new System.Windows.Forms.TextBox();
             this.bodyComboBox = new System.Windows.Forms.ComboBox();
             this.calcSpeedButton = new System.Windows.Forms.Button();
+            this.CalcGeoStationaryHeightButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // planetMoonSelectLabel
@@ -74,7 +75,7 @@
             // 
             // gravFieldAnswerTextBox
             // 
-            this.gravFieldAnswerTextBox.Location = new System.Drawing.Point(13, 160);
+            this.gravFieldAnswerTextBox.Location = new System.Drawing.Point(12, 164);
             this.gravFieldAnswerTextBox.Name = "gravFieldAnswerTextBox";
             this.gravFieldAnswerTextBox.ReadOnly = true;
             this.gravFieldAnswerTextBox.Size = new System.Drawing.Size(229, 20);
@@ -100,11 +101,22 @@
             this.calcSpeedButton.UseVisualStyleBackColor = true;
             this.calcSpeedButton.Click += new System.EventHandler(this.calcSpeedButton_Click);
             // 
+            // CalcGeoStationaryHeightButton
+            // 
+            this.CalcGeoStationaryHeightButton.Location = new System.Drawing.Point(13, 135);
+            this.CalcGeoStationaryHeightButton.Name = "CalcGeoStationaryHeightButton";
+            this.CalcGeoStationaryHeightButton.Size = new System.Drawing.Size(228, 23);
+            this.CalcGeoStationaryHeightButton.TabIndex = 8;
+            this.CalcGeoStationaryHeightButton.Text = "Geostationary Height Above Surface";
+            this.CalcGeoStationaryHeightButton.UseVisualStyleBackColor = true;
+            this.CalcGeoStationaryHeightButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.CalcGeoStationaryHeightButton);
             this.Controls.Add(this.calcSpeedButton);
             this.Controls.Add(this.bodyComboBox);
             this.Controls.Add(this.gravFieldAnswerTextBox);
@@ -128,6 +140,7 @@
         private System.Windows.Forms.TextBox gravFieldAnswerTextBox;
         private System.Windows.Forms.ComboBox bodyComboBox;
         private System.Windows.Forms.Button calcSpeedButton;
+        private System.Windows.Forms.Button CalcGeoStationaryHeightButton;
     }
 }
 
